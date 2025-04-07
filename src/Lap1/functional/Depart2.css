@@ -1,0 +1,59 @@
+/* Depart.css */
+.container {
+    border: 5px solid #4CAF50; 
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.5); 
+    text-align: center;
+}
+
+body {
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #420404;
+    text-align: center;
+}
+
+.animated-button {
+    background: linear-gradient(45deg, #ff416c, #caa5a5);
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.animated-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 75, 43, 0.5);
+}
+
+.animated-button:active {
+    transform: scale(0.9);
+    box-shadow: 0 5px 10px rgba(255, 75, 43, 0.3);
+}
+
+/* Shine Effect */
+.animated-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-30deg);
+    transition: left 0.5s ease-in-out;
+}
+
+.animated-button:hover::before {
+    left: 150%;
+}
