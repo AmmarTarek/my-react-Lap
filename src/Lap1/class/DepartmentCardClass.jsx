@@ -32,7 +32,7 @@ export default class DepartmentCardClass extends React.Component{
         <h3 className="dep"> Number of Students: <span id="studentCount">{this.state.NumberOfStudents}</span></h3>
         <button className="animated-button" onClick={this.handleIncrement}>+ Increment</button>
         <button className="animated-button" onClick={this.restart}>Restart from 0</button>
-        <h4 className="dep">The Department name is: {this.state.DepartMentName}</h4>
+        <h5 className="dep">The Department name is: {this.state.DepartMentName}</h5>
         </div>
         )
     }
